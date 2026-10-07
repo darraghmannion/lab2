@@ -1,5 +1,6 @@
 import Movies from './Movies';
 export function Read() {
+    // Sample movie records use the fields consumed by the movie card component.
     const movies = [
         {
             Title: 'Avengers: Infinity War',
@@ -27,6 +28,7 @@ export function Read() {
     return (
         <div>
             <h1>Read</h1>
+            {/* Pass the records to Movies so it can render one card per movie. */}
             <Movies movies={movies} />
         </div>
     );
